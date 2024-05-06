@@ -1,0 +1,107 @@
+.extractor,
+.downloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.extractor {
+    h2 {
+        text-align: center;
+    }
+    input {
+        display: none;
+    }
+
+    .dragNDrop {
+        border: 2px dashed #ccc;
+        padding: 20px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+        
+        &:hover {
+            border: 2px dashed #333;
+            transition: all 0.3s ease-in;
+        }
+
+        &.active {
+            border: 2px dashed #00b38a;
+            background-color: #eee;
+            transition: all 0.3s ease-in;
+        }
+
+        span {
+            padding: 2px 5px;
+            color: #00b38a;
+        }
+
+        .upload-icon {
+            height: 200px;
+            fill: #F94413;
+        }
+    }
+}
+
+.downloader {
+    text-align: center;
+    transition: all 0.3s ease-in;
+    max-width: 460px;
+    min-width: 250px;
+
+    p {
+        margin-bottom: 30px;
+    }
+
+    button {
+        height: 40px;
+        font-weight: 600;
+        text-transform: uppercase;
+        transform: skewX(-25deg);
+        cursor: pointer;
+        margin: 0 7.5px;
+        transition: all 0.3s ease-in;
+        
+        &.primary {
+            background-color: #00b38a;
+            border: 2px solid #00b38a;
+            color: white;
+            
+            &:hover {
+                color: #000;
+
+                .download-icon {
+                    fill: #000;
+                    transition: all 0.3s ease-in;
+                }
+            }
+        }
+        &.secondary {
+            background-color: transparent;
+            border: 2px solid #F94413;
+            color: #F94413;
+    
+            &:hover {
+                background-color: rgba(249, 68, 19, 15%);
+                color: #000;
+            }
+        }
+    }
+    span {
+        position: relative;
+        display: inline-flex;
+        transform: skewX(25deg);
+        align-items: center;
+        padding: 0 15px;
+
+        .icon-container {
+            margin-left: 10px;
+            .download-icon {
+                height: 20px;
+                fill: #fff;
+                transition: all 0.3s ease-in;
+            }
+        }
+    }
+}
