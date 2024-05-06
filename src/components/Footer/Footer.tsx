@@ -4,7 +4,7 @@ import './Footer.scss'
 const Footer: React.FC = () => {
     return (
         <footer>
-            <small>&copy; 2024 Hopeful Integrated Engineering Candidate Spencer Ricks - All Rights Reserved</small>
+            <small>&copy; 2024 Spencer Ricks - All Rights Reserved</small>
         </footer>
     )
 }
