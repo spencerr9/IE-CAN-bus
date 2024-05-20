@@ -1,13 +1,13 @@
 import React from "react";
 import './Nav.scss'
 
-import ieLogo from '../../assets/IE_SECONDARY_LOGO_WEB-1024x285.png'
+import carLogo from '../../assets/carLogo-removebg.png'
 
 const Nav: React.FC = () => {
     return (
         <nav className="nav">
             <div className="logo-container">
-                <img src={ieLogo} alt="" />
+                <img src={carLogo} alt="" />
             </div>
             <div className="text-container">
                 <h1>
